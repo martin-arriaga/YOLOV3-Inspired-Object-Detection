@@ -3,3 +3,4 @@ yolo11n.pt
 *.pth
 *.pt
 runs/
+datasets/VOC/
