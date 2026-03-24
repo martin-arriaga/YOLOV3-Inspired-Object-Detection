@@ -1,5 +1,4 @@
-VOC.yaml
-yolo11n.pt
+
 *.pth
 *.pt
 runs/

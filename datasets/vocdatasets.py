@@ -13,7 +13,7 @@ class VOCDataset(Dataset):
         self.anchors = anchors  # list of tensors per scale (3x2)
         self.num_classes = num_classes
         self.transform = transform
-        self.images = os.listdir(img_folder)
+        self.images = [f for f in os.listdir(img_folder) if f.endswith(('.jpg', '.png', '.jpeg'))]
 
     def __len__(self):
         return len(self.images)
